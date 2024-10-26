@@ -1,0 +1,11 @@
+user_id,age,income_bracket,occupation,family_size,location,credit_score,online_shopping_frequency,preferred_payment_method,last_purchase_date,lifestyle_category,social_media_presence
+1,63,150k+,Teacher,2,Rural,689,Quarterly,Debit Card,2024-09-22,Budget,
+2,53,100k-150k,Manager,4,Urban,652,Quarterly,Debit Card,2024-08-13,Luxury,
+3,39,75k-100k,Business Owner,4,Urban,729,Monthly,Debit Card,2024-08-25,Budget,
+4,32,150k+,Healthcare,3,Rural,683,Weekly,Net Banking,2024-10-12,Luxury,High
+5,45,50k-75k,Teacher,4,Suburban,691,Rarely,Debit Card,2024-09-08,Premium,High
+6,63,100k-150k,Professional,4,Urban,710,Monthly,Credit Card,2024-10-11,Value-Conscious,High
+7,43,50k-75k,Professional,1,Suburban,787,Rarely,UPI,2024-08-15,Luxury,Low
+8,47,100k-150k,Engineer,3,Suburban,798,Rarely,Debit Card,2024-08-09,Budget,High
+9,35,150k+,Engineer,5,Suburban,771,Monthly,Debit Card,2024-07-31,Premium,High
+10,35,30k-50k,Sales,3,Urban,607,Monthly,Net Banking,2024-08-25,Luxury,High

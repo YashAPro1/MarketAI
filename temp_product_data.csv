@@ -1,0 +1,21 @@
+product_id,category,brand_tier,price,warranty_years,avg_rating,stock_status,seasonal_relevance,target_age_group,eco_friendly,launch_date,discount_percentage,delivery_time_days,installment_available,marketing_channel
+1,Furniture,Budget,107428,3,4.8,Limited Stock,All Season,18-25,False,2024-01-08,15,7,True,Email
+2,Electronics,Premium,3588,5,3.8,In Stock,Winter,25-40,False,2024-06-23,10,4,True,Email
+3,Home Appliances,Luxury,13327,5,4.1,Limited Stock,All Season,25-40,True,2024-04-21,0,4,True,Email
+4,Fashion,Luxury,3588,2,5.0,In Stock,Festive,18-25,False,2023-11-04,15,7,False,Social Media
+5,Electronics,Luxury,107428,5,4.6,In Stock,All Season,All Ages,True,2024-06-09,15,1,False,Email
+6,Wellness,Premium,19925,3,4.2,In Stock,Winter,18-25,False,2024-04-25,10,2,False,Social Media
+7,Home Appliances,Luxury,13327,5,4.3,In Stock,Winter,40-60,True,2024-01-22,0,7,True,Print
+8,Wellness,Luxury,107428,3,4.1,Pre-order,All Season,18-25,False,2024-05-12,20,5,True,TV
+9,Wellness,Luxury,13327,3,4.6,Limited Stock,All Season,All Ages,True,2023-12-02,10,6,True,Social Media
+10,Fashion,Budget,13327,3,4.1,Pre-order,Festive,All Ages,True,2024-06-02,20,2,True,Social Media
+11,Electronics,Luxury,3588,1,4.5,In Stock,Summer,25-40,True,2024-04-10,5,3,True,Email
+12,Wellness,Mid-range,19925,3,4.6,In Stock,All Season,All Ages,False,2024-01-08,20,1,False,Print
+13,Fashion,Luxury,19925,5,4.4,Limited Stock,Winter,40-60,True,2024-08-14,25,1,True,TV
+14,Wellness,Luxury,19925,5,4.3,In Stock,Winter,All Ages,True,2023-12-26,0,3,False,Multi-channel
+15,Wellness,Premium,13327,5,3.8,Limited Stock,All Season,All Ages,True,2024-07-08,20,5,True,Print
+16,Home Appliances,Mid-range,13327,3,3.8,In Stock,Festive,25-40,False,2024-06-11,20,3,True,TV
+17,Home Appliances,Luxury,13327,1,4.7,Limited Stock,Winter,All Ages,False,2024-04-26,0,7,True,TV
+18,Fashion,Luxury,3588,5,3.9,In Stock,Summer,25-40,True,2024-04-28,20,5,True,Social Media
+19,Wellness,Luxury,19925,3,4.5,Limited Stock,Festive,40-60,True,2024-04-11,15,6,False,Print
+20,Fashion,Luxury,107428,2,3.9,Pre-order,Winter,40-60,True,2024-08-29,20,3,False,Email
