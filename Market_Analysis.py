@@ -335,10 +335,10 @@ def convert_to_native(obj):
 # Streamlit UI
 st.set_page_config(page_title="Market Matcher", page_icon="🎯", layout="wide")
 
-st.title("🎯 Market Matcher - Product Recommendation System")
+st.title("🎯 Market Matcher - Product Marketing System")
 
 # API Key Input
-api_key = st.sidebar.text_input("Enter Google AI API Key", type="password")
+api_key = "AIzaSyC0PEcIDIkGpM0y34W4jPIKXvrJZQbPdA8"
 
 # File Upload Section
 st.sidebar.header("Data Upload")
@@ -459,7 +459,7 @@ if api_key and user_data_file and product_data_file:
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
 else:
-    st.info("Please provide your Google AI API key and upload both user and product data files to begin.")
+    st.info("Welcome!, Enjoy this Service!!.")
     
     # Sample Data Format
     st.header("Expected Data Format")
