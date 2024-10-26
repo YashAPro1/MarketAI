@@ -340,7 +340,8 @@ st.title("🎯 Market Matcher - Product Marketing System")
 # API Key Input
 api_key = "AIzaSyC0PEcIDIkGpM0y34W4jPIKXvrJZQbPdA8"
 
-# File Upload Section
+# File Upload Section # Use margin for better vertical alignment
+st.sidebar.title("Mind Market")
 st.sidebar.header("Data Upload")
 user_data_file = st.sidebar.file_uploader("Upload User Data CSV", type=['csv'])
 product_data_file = st.sidebar.file_uploader("Upload Product Data CSV", type=['csv'])
