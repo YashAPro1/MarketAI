@@ -341,13 +341,23 @@ st.title("🎯 Market Matcher - Product Marketing System")
 api_key = "AIzaSyC0PEcIDIkGpM0y34W4jPIKXvrJZQbPdA8"
 
 # File Upload Section
-st.sidebar.header("Data Upload")
-user_data_file = st.sidebar.file_uploader("Upload User Data CSV", type=['csv'])
-product_data_file = st.sidebar.file_uploader("Upload Product Data CSV", type=['csv'])
+st.sidebar.header("MindMarket")
+st.info("Upload data in csv. CSV1 -> User Data(Any Attributes), CSV2 -> Product Data(Any Attributes)")
+user_data_file = st.file_uploader("Upload User Data CSV", type=['csv'])
+product_data_file = st.file_uploader("Upload Product Data CSV", type=['csv'])
 
 if api_key and user_data_file and product_data_file:
     try:
+        user_data = pd.read_csv(user_data_file)
+        product_data = pd.read_csv(product_data_file)
+
+        st.write("User Data:")
+        st.dataframe(user_data.head())
+        st.write("Product Data:")
+        st.dataframe(product_data.head())
+
         # Initialize matcher
+
         matcher = MarketMatcher(api_key=api_key)
         
         # Save uploaded files temporarily
@@ -360,12 +370,12 @@ if api_key and user_data_file and product_data_file:
         
         # Display available user IDs
         user_ids = user_df['user_id'].unique()
-        selected_user = st.sidebar.selectbox("Select User ID", user_ids)
+        selected_user = st.selectbox("Select User ID", user_ids)
         
         # Number of recommendations
-        top_n = st.sidebar.slider("Number of Recommendations", 1, 10, 5)
+        top_n = st.slider("Number of Recommendations", 1, 10, 5)
         
-        if st.sidebar.button("Get Recommendations"):
+        if st.button("Get Recommendations"):
             with st.spinner("Analyzing data and generating recommendations..."):
                 # Create async function wrapper
                 async def get_recommendations():
@@ -458,22 +468,3 @@ if api_key and user_data_file and product_data_file:
                 
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
-else:
-    st.info("Welcome!, Enjoy this Service!!.")
-    
-    # Sample Data Format
-    st.header("Expected Data Format")
-    
-    st.subheader("User Data CSV Format:")
-    st.code("""
-    user_id,age,income,location,preferences
-    1,28,75000,New York,["tech","fashion"]
-    2,35,95000,San Francisco,["sports","outdoor"]
-    """)
-    
-    st.subheader("Product Data CSV Format:")
-    st.code("""
-    product_id,name,category,price,features
-    101,Premium Laptop,Electronics,1200,["high-performance","lightweight"]
-    102,Running Shoes,Sports,120,["cushioning","durability"]
-    """)
