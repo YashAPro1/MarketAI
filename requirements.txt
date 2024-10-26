@@ -6,3 +6,7 @@ numpy
 streamlit
 langchain
 langchain-community
+asyncio
+scikit-learn 
+google.generativeai
+plotly
