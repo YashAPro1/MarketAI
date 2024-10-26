@@ -1,0 +1,8 @@
+langchain-google-genai
+chromadb
+pandas
+python-dotenv
+numpy
+streamlit
+langchain
+langchain-community
